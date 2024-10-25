@@ -7,14 +7,13 @@ and this project adheres to [PEP 440](https://www.python.org/dev/peps/pep-0440/)
 and uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-<<<<<<< HEAD
 ## [0.1.2]
 
 ### Added
-* hello
+* lorem
 
 ### Removed
-* world
+* ipsum
 
 ## [0.1.1] - 
 
