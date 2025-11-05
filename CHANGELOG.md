@@ -10,7 +10,7 @@ and uses [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 ## [0.1.3]
 
 ### Changed
-* foo
+* bar
 
 ## [0.1.2]
 
