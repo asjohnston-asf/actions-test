@@ -1,0 +1,14 @@
+name: ip-address.yml
+
+on: workflow_dispatch
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - shell: bash
+        run: curl https://api.ipify.org
+      - shell: bash
+        run: curl https://api.ipify.org
+      - shell: bash
+        run: curl https://api.ipify.org
