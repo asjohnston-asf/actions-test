@@ -7,8 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - shell: bash
-        run: curl https://api.ipify.org
-      - shell: bash
-        run: curl https://api.ipify.org
-      - shell: bash
-        run: curl https://api.ipify.org
+        run: curl --no-verbose https://api.ipify.org
