@@ -1,10 +1,15 @@
 name: ip-address.yml
 
-on: workflow_dispatch
+on:
+  schedule:
+    - cron: '* * * * *'
+  workflow_dispatch:
 
 jobs:
   main:
     runs-on: ubuntu-latest
     steps:
       - shell: bash
-        run: curl --silent https://api.ipify.org
+        run: |
+          curl --silent https://api.ipify.org
+          wget --user '${{ secrets.USER }}' --password '${{ secrets.PASSWORD }}' https://urs.earthdata.nasa.gov/oauth/authorize?response_type=code&client_id=BO_n7nTIlMljdvU6kRRB3g&redirect_uri=https://cumulus.asf.alaska.edu/login&app_type=401
