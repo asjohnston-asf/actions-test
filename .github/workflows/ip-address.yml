@@ -11,5 +11,5 @@ jobs:
     steps:
       - shell: bash
         run: |
-          curl --silent https://api.ipify.org
-          wget --user '${{ secrets.USER }}' --password '${{ secrets.PASSWORD }}' https://urs.earthdata.nasa.gov/oauth/authorize?response_type=code&client_id=BO_n7nTIlMljdvU6kRRB3g&redirect_uri=https://cumulus.asf.alaska.edu/login&app_type=401
+          curl https://api.ipify.org
+          wget --user '${{ secrets.USER }}' --password '${{ secrets.PASSWORD }}' 'https://urs.earthdata.nasa.gov/oauth/authorize?response_type=code&client_id=BO_n7nTIlMljdvU6kRRB3g&redirect_uri=https://cumulus.asf.alaska.edu/login&app_type=401' -O /dev/null
